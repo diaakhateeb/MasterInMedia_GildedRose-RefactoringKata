@@ -1,0 +1,1 @@
+# MasterInMedia_GildedRose-RefactoringKata2
