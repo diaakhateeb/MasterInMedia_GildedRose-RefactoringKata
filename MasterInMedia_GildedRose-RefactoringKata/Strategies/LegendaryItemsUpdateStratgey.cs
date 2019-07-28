@@ -9,8 +9,7 @@
         }
         public void UpdateItem()
         {
-            //_item.SellIn = _item.SellIn;
-            //_item.Quality = _item.Quality;
+
         }
     }
 }
