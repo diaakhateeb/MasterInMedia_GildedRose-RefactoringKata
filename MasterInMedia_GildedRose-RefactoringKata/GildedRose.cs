@@ -17,7 +17,8 @@ namespace MasterInMedia_GildedRose_RefactoringKata
 
             for (var i = 0; i < _items.Count; i++)
             {
-                fac.GetInstance(_items[i]).UpdateItem();
+                var obj = fac.GetInstance(_items[i]);
+                obj?.UpdateItem();
             }
         }
     }
