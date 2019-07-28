@@ -11,7 +11,7 @@ namespace GildedRose_RefactoringKataTest
         public void StandardItem_UnitTest()
         {
             IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
-            GildedRose app = new GildedRose(Items);
+            GildedRose<Item> app = new GildedRose<Item>(Items);
             app.UpdateQuality();
 
             Assert.AreEqual(-1, Items[0].SellIn);
@@ -22,7 +22,7 @@ namespace GildedRose_RefactoringKataTest
         public void StandardItem_QuantityEqual50_UnitTest()
         {
             IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 50 } };
-            GildedRose app = new GildedRose(Items);
+            GildedRose<Item> app = new GildedRose<Item>(Items);
             app.UpdateQuality();
 
             Assert.AreEqual(-1, Items[0].SellIn);
