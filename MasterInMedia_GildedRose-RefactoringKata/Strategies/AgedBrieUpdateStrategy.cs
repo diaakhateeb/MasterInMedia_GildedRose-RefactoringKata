@@ -1,4 +1,6 @@
-﻿namespace MasterInMedia_GildedRose_RefactoringKata.Strategies
+﻿using MasterInMedia_GildedRose_RefactoringKata.Interfaces;
+
+namespace MasterInMedia_GildedRose_RefactoringKata.Strategies
 {
     public class AgedBrieUpdateStrategy<T> : IUpdateStrategy<T> where T : Item
     {

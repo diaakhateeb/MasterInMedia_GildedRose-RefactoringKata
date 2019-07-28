@@ -12,7 +12,9 @@ namespace GildedRose_RefactoringKataTest
         [Test]
         public void ThirtyDays()
         {
-            var lines = File.ReadAllLines(Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory()))) + "\\ThirtyDays.txt");
+            var lines = File.ReadAllLines(Path.GetDirectoryName(Path.GetDirectoryName(
+                                              Path.GetDirectoryName(Directory.GetCurrentDirectory()))) +
+                                          "\\ThirtyDays.txt");
 
             StringBuilder fakeoutput = new StringBuilder();
             Console.SetOut(new StringWriter(fakeoutput));
@@ -21,7 +23,7 @@ namespace GildedRose_RefactoringKataTest
             Program.Main(new string[] { });
             String output = fakeoutput.ToString();
 
-            var outputLines = output.Split('\n');
+            var outputLines = output.Split("\r\n");
             for (var i = 0; i < Math.Min(lines.Length, outputLines.Length); i++)
             {
                 Assert.AreEqual(lines[i], outputLines[i]);

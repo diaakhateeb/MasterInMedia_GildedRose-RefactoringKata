@@ -1,4 +1,4 @@
-﻿using MasterInMedia_GildedRose_RefactoringKata.Strategies;
+﻿using MasterInMedia_GildedRose_RefactoringKata.Interfaces;
 
 namespace MasterInMedia_GildedRose_RefactoringKata.Patterns.Factory
 {
