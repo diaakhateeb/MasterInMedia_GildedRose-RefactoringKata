@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using MasterInMedia_GildedRose_RefactoringKata.Patterns.Factory;
+using System.Collections.Generic;
 
 namespace MasterInMedia_GildedRose_RefactoringKata
 {
@@ -12,13 +13,11 @@ namespace MasterInMedia_GildedRose_RefactoringKata
 
         public void UpdateQuality()
         {
+            var fac = new UpdateItemStrategyFactory<Item>();
+
             for (var i = 0; i < _items.Count; i++)
             {
-                if (_items[i].Name == "Aged Brie")
-                {
-                    //var agedBrie = new AgedBrie(new AgedBrieChecks());
-                    //agedBrie.UpdateItem(_items[i]);
-                }
+                fac.GetInstance(_items[i]).UpdateItem();
             }
         }
     }

@@ -12,7 +12,7 @@
         {
             _item.Quality -= 2;
             if (_item.SellIn > 0) _item.SellIn--;
-            if (_item.SellIn <= 0) _item.Quality -= 2;
+            else if (_item.SellIn <= 0) _item.Quality -= 2;
         }
     }
 }

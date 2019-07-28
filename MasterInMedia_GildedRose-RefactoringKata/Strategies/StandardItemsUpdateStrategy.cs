@@ -10,9 +10,15 @@
         public void UpdateItem()
         {
             _item.SellIn--;
-            if (_item.Quality > 0) _item.Quality--;
-            if (_item.SellIn < 0)
-                if (_item.Quality > 0) _item.Quality--;
+
+            if (_item.Quality <= 0) return;
+
+            if (_item.SellIn < 0) _item.Quality = -2;
+            else _item.Quality--;
+
+            //if (_item.Quality > 0) _item.Quality--;
+
+            //if (_item.SellIn < 0 && _item.Quality > 0) _item.Quality--;
         }
     }
 }
