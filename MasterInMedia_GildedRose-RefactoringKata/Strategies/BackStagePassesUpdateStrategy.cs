@@ -10,29 +10,14 @@
         }
         public void UpdateItem()
         {
+            if (_item.Quality > 50) return;
+
             _item.SellIn--;
 
-            if (_item.Quality >= 50) return;
-
             if (_item.SellIn < 0) _item.Quality = 0;
-            else if (_item.SellIn < 6) _item.Quality += 3;
-            else if (_item.SellIn < 11) _item.Quality += 2;
+            else if (_item.SellIn <= 5) _item.Quality += 3;
+            else if (_item.SellIn <= 10) _item.Quality += 2;
             else _item.Quality++;
-
-            //if (_item.Quality < 50) _item.Quality++;
-
-            //if (_item.SellIn < 10)
-            //{
-            //    if (_item.Quality < 50) _item.Quality++;
-            //}
-            //if (_item.SellIn < 5)
-            //{
-            //    if (_item.Quality < 50) _item.Quality++;
-            //}
-            //if (_item.SellIn < 0)
-            //{
-            //    _item.Quality = 0;
-            //}
         }
     }
 }
