@@ -1,1 +1,1 @@
-# MasterInMedia_GildedRose-RefactoringKata2
+# MasterInMedia_GildedRose-RefactoringKata
