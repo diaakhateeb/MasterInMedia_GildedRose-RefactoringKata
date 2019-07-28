@@ -3,17 +3,17 @@ using System.Collections.Generic;
 
 namespace MasterInMedia_GildedRose_RefactoringKata
 {
-    public class GildedRose
+    public class GildedRose<T> where T : Item
     {
-        IList<Item> _items;
-        public GildedRose(IList<Item> items)
+        IList<T> _items;
+        public GildedRose(IList<T> items)
         {
             _items = items;
         }
 
         public void UpdateQuality()
         {
-            var fac = new UpdateItemStrategyFactory<Item>();
+            var fac = new UpdateItemStrategyFactory<T>();
 
             for (var i = 0; i < _items.Count; i++)
             {

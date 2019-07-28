@@ -16,8 +16,9 @@ namespace MasterInMedia_GildedRose_RefactoringKata.Strategies
 
             _item.SellIn--;
 
-            if (_item.SellIn < 0)
-                if (_item.Quality < 50) _item.Quality++;
+            //if (_item.SellIn < 0)
+            //    if (_item.Quality < 50) _item.Quality++;
+            if (_item.SellIn < 0 && _item.Quality < 50) _item.Quality++;
         }
     }
 }

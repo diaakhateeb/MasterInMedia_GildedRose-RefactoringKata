@@ -12,14 +12,20 @@ namespace MasterInMedia_GildedRose_RefactoringKata.Strategies
         }
         public void UpdateItem()
         {
-            if (_item.SellIn > 0)
-                if (_item.Quality < 50) _item.Quality++;
+            //if (_item.SellIn > 0)
+            //    if (_item.Quality < 50) _item.Quality++;
 
-            if (_item.SellIn <= 10)
-                if (_item.Quality < 50) _item.Quality++;
+            //if (_item.SellIn <= 10)
+            //    if (_item.Quality < 50) _item.Quality++;
 
-            if (_item.SellIn <= 5)
-                if (_item.Quality < 50) _item.Quality++;
+            //if (_item.SellIn <= 5)
+            //    if (_item.Quality < 50) _item.Quality++;
+
+            //_item.SellIn--;
+
+            //if (_item.SellIn < 0) _item.Quality = 0;
+
+            if ((_item.SellIn > 0 || _item.SellIn <= 10 || _item.SellIn <= 5) && _item.Quality < 50) _item.Quality++;
 
             _item.SellIn--;
 
