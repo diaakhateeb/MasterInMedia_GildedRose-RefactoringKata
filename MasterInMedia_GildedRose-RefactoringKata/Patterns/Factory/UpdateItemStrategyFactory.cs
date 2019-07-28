@@ -4,8 +4,17 @@ using System;
 
 namespace MasterInMedia_GildedRose_RefactoringKata.Patterns.Factory
 {
+    /// <summary>
+    /// Creates item object class.
+    /// </summary>
+    /// <typeparam name="T">Generic T item type.</typeparam>
     class UpdateItemStrategyFactory<T> : IUpdateItemStrategyFactory<T> where T : Item
     {
+        /// <summary>
+        /// Gets instance of T item generic type.
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns>Returns generic item type object.</returns>
         public IUpdateStrategy<T> GetInstance(T item)
         {
             if (item == null)
