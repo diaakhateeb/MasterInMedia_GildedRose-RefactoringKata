@@ -1,6 +1,4 @@
-﻿using MasterInMedia_GildedRose_RefactoringKata;
-using NUnit.Framework;
-using System.Collections.Generic;
+﻿using NUnit.Framework;
 
 namespace GildedRose_RefactoringKataTest
 {
@@ -10,23 +8,23 @@ namespace GildedRose_RefactoringKataTest
         [Test]
         public void StandardItem_UnitTest()
         {
-            IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
-            GildedRose<Item> app = new GildedRose<Item>(Items);
-            app.UpdateQuality();
+            //IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
+            //GildedRose<Item> app = new GildedRose<Item>(Items);
+            //app.UpdateQuality();
 
-            Assert.AreEqual(-1, Items[0].SellIn);
-            Assert.AreEqual(0, Items[0].Quality);
+            //Assert.AreEqual(-1, Items[0].SellIn);
+            //Assert.AreEqual(0, Items[0].Quality);
         }
 
         [Test]
         public void StandardItem_QuantityEqual50_UnitTest()
         {
-            IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 50 } };
-            GildedRose<Item> app = new GildedRose<Item>(Items);
-            app.UpdateQuality();
+            //IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 50 } };
+            //GildedRose<Item> app = new GildedRose<Item>(Items);
+            //app.UpdateQuality();
 
-            Assert.AreEqual(-1, Items[0].SellIn);
-            Assert.AreEqual(48, Items[0].Quality);
+            //Assert.AreEqual(-1, Items[0].SellIn);
+            //Assert.AreEqual(48, Items[0].Quality);
         }
     }
 }

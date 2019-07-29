@@ -3,7 +3,6 @@
     /// <summary>
     /// Updates Strategy interface that exposes Update item method.
     /// </summary>
-    /// <typeparam name="T">Generic item type.</typeparam>
     public interface IUpdateStrategy
     {
         /// <summary>

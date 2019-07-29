@@ -32,24 +32,19 @@ namespace MasterInMedia_GildedRose_RefactoringKataV2.Patterns.Factory
 
             try
             {
-                if (item is AgieBrie)
+                switch (item)
                 {
-                    var item2 = (AgieBrie)item;
-                    return new AgedBrieUpdateStrategy(item2);
+                    case AgieBrie agieBrieItem:
+                        return new AgedBrieUpdateStrategy(agieBrieItem);
+                    case BackStagePasses backstageItem:
+                        return new BackStagePassesUpdateStrategy(backstageItem);
+                    case Conjured conjuredItem:
+                        return new ConjuredUpdateStrategy(conjuredItem);
+                    case Legendary legendaryItem:
+                        return new LegendaryItemsUpdateStratgey(legendaryItem);
+                    default:
+                        return new StandardItemsUpdateStrategy(item);
                 }
-                else if (item is BackStagePasses backstageItem)
-                {
-                    return new BackStagePassesUpdateStrategy(backstageItem);
-                }
-                else if (item is Conjured conjuredItem)
-                {
-                    return new ConjuredUpdateStrategy(conjuredItem);
-                }
-                else if (item is Legendary legendaryItem)
-                {
-                    return new LegendaryItemsUpdateStratgey(legendaryItem);
-                }
-                else return new StandardItemsUpdateStrategy(item);
             }
             catch (TypeInitializationException typeInitExp)
             {

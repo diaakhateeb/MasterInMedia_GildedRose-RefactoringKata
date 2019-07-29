@@ -1,4 +1,4 @@
-using MasterInMedia_GildedRose_RefactoringKata;
+using MasterInMedia_GildedRose_RefactoringKataV2;
 using NUnit.Framework;
 using System;
 using System.IO;
@@ -16,12 +16,12 @@ namespace GildedRose_RefactoringKataTest
                                               Path.GetDirectoryName(Directory.GetCurrentDirectory()))) +
                                           "\\ThirtyDays.txt");
 
-            StringBuilder fakeoutput = new StringBuilder();
+            var fakeoutput = new StringBuilder();
             Console.SetOut(new StringWriter(fakeoutput));
             Console.SetIn(new StringReader("a\n"));
 
             Program.Main(new string[] { });
-            String output = fakeoutput.ToString();
+            var output = fakeoutput.ToString();
 
             var outputLines = output.Split("\r\n");
             for (var i = 0; i < Math.Min(lines.Length, outputLines.Length); i++)

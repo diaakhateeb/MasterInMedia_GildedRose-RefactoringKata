@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="MasterInMedia_GildedRose-RefactoringKata">
-      <HintPath>..\MasterInMedia_GildedRose-RefactoringKata\bin\Debug\netcoreapp2.2\MasterInMedia_GildedRose-RefactoringKata.dll</HintPath>
+    <Reference Include="MasterInMedia_GildedRose-RefactoringKataV2">
+      <HintPath>..\MasterInMedia_GildedRose-RefactoringKataV2\bin\Debug\netcoreapp2.2\MasterInMedia_GildedRose-RefactoringKataV2.dll</HintPath>
     </Reference>
   </ItemGroup>
 
