@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>MasterInMedia_GildedRose_RefactoringKata</RootNamespace>
+    <RootNamespace>MasterInMedia_GildedRose_RefactoringKataV2</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

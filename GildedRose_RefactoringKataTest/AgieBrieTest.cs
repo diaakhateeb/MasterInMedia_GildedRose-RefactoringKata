@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace GildedRose_RefactoringKataTest
 {
     [TestFixture]
-    public class GildedRoseTest
+    public class AgieBrieTest
     {
         [Test]
         public void StandardItem_UnitTest()

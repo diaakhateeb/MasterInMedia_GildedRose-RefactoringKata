@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasterInMedia_GildedRose-RefactoringKata", "MasterInMedia_GildedRose-RefactoringKata\MasterInMedia_GildedRose-RefactoringKata.csproj", "{A3E198F1-9B90-44DA-8758-B7D8D9D1550A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose_RefactoringKataTest", "GildedRose_RefactoringKataTest\GildedRose_RefactoringKataTest.csproj", "{5BB56713-C4C3-42F5-846C-F48CC24C5686}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRose_RefactoringKataTest", "GildedRose_RefactoringKataTest\GildedRose_RefactoringKataTest.csproj", "{5BB56713-C4C3-42F5-846C-F48CC24C5686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterInMedia_GildedRose-RefactoringKataV2", "MasterInMedia_GildedRose-RefactoringKataV2\MasterInMedia_GildedRose-RefactoringKataV2.csproj", "{4C2B4DF7-AFF7-4909-8EF4-BF1A184B49B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5BB56713-C4C3-42F5-846C-F48CC24C5686}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BB56713-C4C3-42F5-846C-F48CC24C5686}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BB56713-C4C3-42F5-846C-F48CC24C5686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C2B4DF7-AFF7-4909-8EF4-BF1A184B49B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2B4DF7-AFF7-4909-8EF4-BF1A184B49B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2B4DF7-AFF7-4909-8EF4-BF1A184B49B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2B4DF7-AFF7-4909-8EF4-BF1A184B49B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
