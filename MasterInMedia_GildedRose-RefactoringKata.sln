@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRose_RefactoringKataT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterInMedia_GildedRose-RefactoringKataV2", "MasterInMedia_GildedRose-RefactoringKataV2\MasterInMedia_GildedRose-RefactoringKataV2.csproj", "{4C2B4DF7-AFF7-4909-8EF4-BF1A184B49B8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GildedRose_RefactoringKata", "GildedRose_RefactoringKata", "{BB807CBD-417C-4190-B767-EBA64AF925E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GildedRose_RefactoringKataV2", "GildedRose_RefactoringKataV2", "{E8314EC6-648A-4E67-85C2-D8D81A3869F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3E198F1-9B90-44DA-8758-B7D8D9D1550A} = {BB807CBD-417C-4190-B767-EBA64AF925E9}
+		{5BB56713-C4C3-42F5-846C-F48CC24C5686} = {BB807CBD-417C-4190-B767-EBA64AF925E9}
+		{4C2B4DF7-AFF7-4909-8EF4-BF1A184B49B8} = {E8314EC6-648A-4E67-85C2-D8D81A3869F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FE57EED6-F730-485D-844F-A59DF6E0880A}
