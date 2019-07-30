@@ -59,3 +59,6 @@ In addition to the [ApprovalTest](https://github.com/diaakhateeb/MasterInMedia_G
  - **[StandardTest](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/blob/master/MasterInMedia_GildedRose-RefactoringKataTest/StandardTest.cs):** It has DegradeQualityByOne_SellInIsPositive(), DegradeSellInByOne_SellInIsPositive(), QualityDegradesTwiceAsFast_SellInIsNegative() and QualityIsNeverNegative() unit tests.
 
 The solution errors and exceptions are logged using [NLog](https://nlog-project.org).
+
+## Running the Solution
+Clone the solution and through the CLI execute **dotnet run -p** "project folder path" command.
