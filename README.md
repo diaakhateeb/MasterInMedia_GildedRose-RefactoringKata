@@ -47,7 +47,7 @@ We are not allowed to change Item class and therefore it is a concrete component
 
 **- Cons:**
 1. One to one relationship between the created item class and the Item base class (dependency).
-2. Memory time and space are used in terms of performance for each item class allocation.
+2. Memory time and space are used in terms of performance for each item class Instantiation.
 
 ### Unit Testing:
 In addition to the [ApprovalTest](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/blob/master/MasterInMedia_GildedRose-RefactoringKataTest/ApprovalTest.cs) shipped with the original project, each item type has its own unit tests as follows:
