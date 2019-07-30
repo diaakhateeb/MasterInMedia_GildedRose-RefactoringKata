@@ -1,4 +1,4 @@
-using MasterInMedia_GildedRose_RefactoringKataV2;
+using MasterInMedia_GildedRose_RefactoringKata;
 using NUnit.Framework;
 using System;
 using System.IO;
