@@ -38,7 +38,7 @@ We are not allowed to change Item class and therefore it is a concrete component
 2. Factory GetInstance() method needs to cast the Generic type to the appropriate item type (performance factor).
 
 
-### 1. [Using Created Item Type](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/tree/master/MasterInMedia_GildedRose-RefactoringKataV2):
+### 2. [Using Created Item Type](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/tree/master/MasterInMedia_GildedRose-RefactoringKataV2):
 
  **- Pros:**
 1. Each item (including new one) is having its own class component that inherits from Item base class. This provides ability to let each item exposes its own functions additional to having Item base class members (Polymorphism).
