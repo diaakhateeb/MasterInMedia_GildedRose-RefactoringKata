@@ -29,7 +29,7 @@ We are not allowed to change Item class and therefore it is a concrete component
 ### 1. [Using Generics](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/tree/master/MasterInMedia_GildedRose-RefactoringKata):
 
  **- Pros:**
-1. Flexibility of type checking (specifically Item base class or any of its child).
+1. Flexibility of type checking (specifically Item base class or any of its childs).
 2. Factory GetInstance() method check is done using item name which is a string value (performance wise).
 3. No one to one relationship with Item class (no dependency).
 
