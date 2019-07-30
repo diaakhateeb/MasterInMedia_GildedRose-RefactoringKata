@@ -29,7 +29,7 @@ We are not allowed to change Item class and therefore it is a concrete component
 ### 1. [Using Generics](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/tree/master/MasterInMedia_GildedRose-RefactoringKata):
 
  **- Pros:**
-1. Flexibility of type checking (specifically Item base class or any of its childs).
+1. Flexibility of type checking (specifically Item base class or any of its children).
 2. Factory GetInstance() method check is done using item name which is a string value (performance wise).
 3. No one to one relationship with Item class (no dependency).
 
@@ -50,9 +50,9 @@ We are not allowed to change Item class and therefore it is a concrete component
 2. Memory time and space are used in terms of performance for each item class allocation.
 
 ### Unit Testing:
-In addition to the [ApprovalTest](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/blob/master/MasterInMedia_GildedRose-RefactoringKataTest/ApprovalTest.cs) shipped with the original project, each item type has its own unit tests as follow:
+In addition to the [ApprovalTest](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/blob/master/MasterInMedia_GildedRose-RefactoringKataTest/ApprovalTest.cs) shipped with the original project, each item type has its own unit tests as follows:
 
- - **[AgieBrieTest](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/blob/master/MasterInMedia_GildedRose-RefactoringKataTest/AgieBrieTest.cs):** It has QualityIncreasesByOne_SellInIsPositive(), QualityIncreasesByTwo_SellInIsZeroOrNegative() and QualityCannotBeMoreThan50() unit tests.
+ - **[AgedBrieTest](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/blob/master/MasterInMedia_GildedRose-RefactoringKataTest/AgieBrieTest.cs):** It has QualityIncreasesByOne_SellInIsPositive(), QualityIncreasesByTwo_SellInIsZeroOrNegative() and QualityCannotBeMoreThan50() unit tests.
 - **[BackStagePassesTest](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/blob/master/MasterInMedia_GildedRose-RefactoringKataTest/BackStagePassesTest.cs):** It has QualityIncreaseByOne_SellInGreaterThan10(), QualityIncreaseByTwo_SellInBetween10And6(), QualityIncreaseByTwo_SellInBetween5And0(), QualityShouldBeZero_WhenSellInNegative() and QualityCannotBeMoreThan50() unit tests.
 - **[ConjuredTest](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/blob/master/MasterInMedia_GildedRose-RefactoringKataTest/ConjuredTest.cs):** It has DegradeQualityByOne_SellInIsPositive(), DegradeSellInByOne_SellInIsPositive(), QualityDegradesTwiceAsFast_SellInIsNegative() and QualityIsNeverNegative() unit tests.
 - **[LegendaryTest](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/blob/master/MasterInMedia_GildedRose-RefactoringKataTest/LegendaryTest.cs):** It has NotDecreaseInQuality() and SellInNotDecreased() unit tests.
