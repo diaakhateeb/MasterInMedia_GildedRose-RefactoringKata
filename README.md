@@ -1,1 +1,1 @@
-# Gilded Rose Refactoring Kata [![Build status](https://ci.appveyor.com/api/projects/status/96m4ue9c2agep5y7?svg=true)](https://ci.appveyor.com/project/diaakhateeb/masterinmedia-gildedrose-refactoringkata)
+# Gilded Rose Refactoring Kata [![Build status](https://ci.appveyor.com/api/projects/status/96m4ue9c2agep5y7?svg=true)](https://ci.appveyor.com/project/diaakhateeb/masterinmedia-gildedrose-refactoringkata) <img src='https://bettercodehub.com/edge/badge/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata?branch=master'>
