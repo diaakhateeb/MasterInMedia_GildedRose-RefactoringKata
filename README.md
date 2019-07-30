@@ -23,7 +23,7 @@ Feel free to make any changes to the UpdateQuality method and add any new code a
 
 Just for clarification, an item can never have its Quality increase above 50, however "Sulfuras" is a legendary item and as such its Quality is 80 and it never alters.
 
-## Solution approaches:
+## Solution Approaches:
 We are not allowed to change Item class and therefore it is a concrete component to us.
 
 ### 1. [Using Generics](https://github.com/diaakhateeb/MasterInMedia_GildedRose-RefactoringKata/tree/master/MasterInMedia_GildedRose-RefactoringKata):
